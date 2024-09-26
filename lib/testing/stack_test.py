@@ -1,4 +1,10 @@
-from Stack import Stack
+import sys
+import os
+
+# Ensure the lib directory is in the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+from lib.stack import Stack
 
 class TestStack:
     '''Class Stack in Stack.py'''
